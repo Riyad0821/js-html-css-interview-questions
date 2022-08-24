@@ -1,1 +1,1 @@
-# js-html-css-practice
+# js-html-css-interview-questions
