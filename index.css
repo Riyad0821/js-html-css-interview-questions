@@ -1,0 +1,15 @@
+html, body{
+    height: 100%;
+}
+.parent{
+    height: 200px;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-a-div-1{
+    background: red;
+    width: 100px;
+    height: 100px;
+}
