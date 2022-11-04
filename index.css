@@ -1,0 +1,84 @@
+:root {
+    --color-main: turquoise;
+    --color-secondary: aqua;
+    --color-white: white;
+    --color-gray: rgb(236, 227, 227);
+    --color-danger: rgb(243, 69, 69);
+    --color-green: rgb(75, 187, 75);
+}
+html, body{
+    height: 100%;
+}
+.parent{
+    height: 200px;
+    background: var(--color-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    text-align: center;
+}
+h4{
+    color: var(--color-secondary);
+}
+.center-a-div-1{
+    background: var(--color-danger);
+    width: 100px;
+    height: 100px;
+}
+
+/* Grid layout */
+
+/* Example 1 */
+.item1 {
+    grid-area: header;
+}
+.item2 {
+    grid-area: menu;
+}
+.item3 {
+    grid-area: main;
+}
+.item4 {
+    grid-area: right;
+}
+.item5 {
+    grid-area: footer;
+}
+
+.grid-container1{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer'
+    ;
+    background-color: var(--color-main);
+    padding: 10px;
+}
+
+.grid-container1 > div {
+    color: white;
+    background-color: var(--color-secondary);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* Example 2 */
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--color-main);
+    padding: 10px;
+    gap: 10px;
+}
+
+.grid-item{
+    text-align: center;
+    background-color: var(--color-secondary)
+}
+
